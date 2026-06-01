@@ -1,16 +1,38 @@
-# React + Vite
+📊 Panel Interactivo - Simulador Hipotecario (Frontend)
+Interfaz de usuario (SPA) moderna e interactiva diseñada para consumir el motor financiero backend. Permite al usuario simular condiciones hipotecarias en tiempo real y visualizar la evolución de su deuda a través de gráficos dinámicos.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Tecnologías y Herramientas
+Core: React 18, Vite.
 
-Currently, two official plugins are available:
+Estilos: CSS puro con diseño Responsive y variables de estado.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Gráficos Data-Viz: Recharts (para renderizado SVG de alto rendimiento del cuadro de amortización).
 
-## React Compiler
+Conexión: Fetch API asíncrona con manejo seguro de promesas y operadores de encadenamiento opcional (?.) para resiliencia de datos.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+✨ Características Destacadas
+Controles Deslizantes: Inputs tipo range enlazados al estado de React para una experiencia de usuario fluida.
 
-## Expanding the ESLint configuration
+Intersección Financiera: Visualización gráfica de la curva de intereses pagados frente al capital devuelto (Sistema Francés).
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Resiliencia: Manejo de errores de conexión y validación de respuestas asíncronas.
+
+⚙️ Guía de Ejecución Rápida
+Prerrequisitos
+Node.js (versión LTS recomendada).
+
+El motor backend de este proyecto encendido en el puerto 8083.
+
+1. Clonar el repositorio
+git clone https://github.com/TU_USUARIO/hipoteca-frontend.git
+cd hipoteca-frontend
+
+2. Instalar dependencias
+npm install
+
+3. Levantar el entorno de desarrollo
+El proyecto está configurado con strictPort para asegurar la conectividad con las políticas CORS del backend:
+
+npm run dev
+
+(Abre tu navegador en http://localhost:5174 para utilizar el simulador).
