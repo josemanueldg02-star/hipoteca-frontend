@@ -24,7 +24,7 @@ Node.js (versión LTS recomendada).
 El motor backend de este proyecto encendido en el puerto 8083.
 
 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/hipoteca-frontend.git
+git clone https://github.com/josemanueldg02-star/hipoteca-frontend.git
 cd hipoteca-frontend
 
 2. Instalar dependencias
