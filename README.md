@@ -1,38 +1,41 @@
-📊 Panel Interactivo - Simulador Hipotecario (Frontend)
-Interfaz de usuario (SPA) moderna e interactiva diseñada para consumir el motor financiero backend. Permite al usuario simular condiciones hipotecarias en tiempo real y visualizar la evolución de su deuda a través de gráficos dinámicos.
+# Mortgage Calculator — Frontend
 
-🚀 Tecnologías y Herramientas
-Core: React 18, Vite.
+Interactive SPA for the [hipoteca-simulador](https://github.com/josemanueldg02-star/hipoteca-simulador) 
+financial engine. Users adjust loan parameters via sliders and instantly see the 
+amortization curve, monthly payment breakdown, and interest vs. principal chart.
 
-Estilos: CSS puro con diseño Responsive y variables de estado.
+[![React](https://img.shields.io/badge/React-18-blue)](https://react.dev/)
+[![Vite](https://img.shields.io/badge/Vite-latest-purple)](https://vitejs.dev/)
+[![Recharts](https://img.shields.io/badge/Recharts-SVG%20charts-green)](https://recharts.org/)
 
-Gráficos Data-Viz: Recharts (para renderizado SVG de alto rendimiento del cuadro de amortización).
+---
 
-Conexión: Fetch API asíncrona con manejo seguro de promesas y operadores de encadenamiento opcional (?.) para resiliencia de datos.
+## Features
 
-✨ Características Destacadas
-Controles Deslizantes: Inputs tipo range enlazados al estado de React para una experiencia de usuario fluida.
+- **Range sliders** bound to React state for real-time parameter adjustment
+- **Recharts visualization** of the French amortization curve (interest paid vs. 
+capital repaid over time)
+- **Async fetch** with optional chaining for resilient API consumption
+- Fully responsive layout with pure CSS
 
-Intersección Financiera: Visualización gráfica de la curva de intereses pagados frente al capital devuelto (Sistema Francés).
+---
 
-Resiliencia: Manejo de errores de conexión y validación de respuestas asíncronas.
+## Running Locally
 
-⚙️ Guía de Ejecución Rápida
-Prerrequisitos
-Node.js (versión LTS recomendada).
+**Prerequisites:** Node.js LTS, and [hipoteca-simulador](https://github.com/josemanueldg02-star/hipoteca-simulador) 
+running on port 8083.
 
-El motor backend de este proyecto encendido en el puerto 8083.
-
-1. Clonar el repositorio
+```bash
 git clone https://github.com/josemanueldg02-star/hipoteca-frontend.git
 cd hipoteca-frontend
-
-2. Instalar dependencias
 npm install
-
-3. Levantar el entorno de desarrollo
-El proyecto está configurado con strictPort para asegurar la conectividad con las políticas CORS del backend:
-
 npm run dev
+```
 
-(Abre tu navegador en http://localhost:5174 para utilizar el simulador).
+Available at `http://localhost:5174`.
+
+---
+
+## Author
+
+**José Manuel Domínguez García** · [@josemanueldg02-star](https://github.com/josemanueldg02-star)
